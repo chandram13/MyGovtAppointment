@@ -23,7 +23,7 @@ def united_States_Postal_Service(self, fname, lname, email, operationalDays, ope
 
     operationalDays = {"Monday": 0, "Tuesday": 1, "Wednesday": 2, "Thursday": 3, "Friday": 3, "Saturday": 4}
     operationalHours = [9, 10, 11, 12, 1, 2, 3, 4, 5]
-    daysKeys = d.keys()
+    daysKeys = sorted(d.keys())
     print(daysKeys)
     for h in operationalHours:
         print(h)
@@ -45,7 +45,7 @@ def localLibrary(fname, lname, email, operationalDays, operationalHours):
 
     operationalDays = {"Monday": 0, "Tuesday": 1, "Wednesday": 2, "Thursday": 3, "Friday": 4, "Saturday": 5}
     operationalHours = [10, 11, 12, 1, 2, 3, 4, 5, 6, 7]
-    libDays = operationalDays.keys()
+    libDays = sorted(operationalDays.keys())
     print(libDays)
     for h in operationalHours:
         print(h)
@@ -57,7 +57,7 @@ def foodDistribution(operationalDays, operationalHours):
     operationalDays = {"Monday": 0, "Tuesday": 1, "Wednesday": 2, "Thursday": 3, "Friday": 4, "Saturday": 5,
                        "Sunday": 6}
     operationalHours = [9, 10, 11, 12, 1, 2, 3, 4, 5, 6, 7]
-    fooDays = operationalDays.keys()
+    fooDays = sorted(operationalDays.keys())
     print(fooDays)
     for h in operationalHours:
         print(h)
@@ -69,7 +69,7 @@ def clothesDrive(operationalDays, operationalHours):
     services = ["Donate new or used clothing", "Receive clothing", "Volunteer"]
     operationalDays = {"Monday": 0, "Tuesday": 1, "Wednesday": 2, "Thursday": 3, "Friday": 4, "Saturday": 5, "Sunday": 6}
     operationalHours = [9, 10, 11, 12, 1, 2, 3, 4, 5, 6, 7]
-    clothesDays = operationalDays.keys()
+    clothesDays = sorted(operationalDays.keys())
     print(clothesDays)
     for h in operationalHours:
         print(h)
@@ -89,7 +89,7 @@ def hospitals(fname, lname, operationalDays, operationalHours):
     operationalHours1 = [12, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
     operationalHours2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 
-    hospitalDays = operationalDays.keys()
+    hospitalDays = sorted(operationalDays.keys())
     print(hospitalDays)
     if operationalDays.splice(7):
         print(range(operationalHours1[0,11]))
@@ -106,7 +106,7 @@ def financialInstitutions(fname, lname, operationalDays, operationalHours):
     services = ["Borrow money", "Deposit money", "Withdraw weapon", "Setup checking account", "Setup savings account"]
     operationalDays = {"Monday": 0, "Tuesday": 1, "Wednesday": 2, "Thursday": 3, "Friday": 4, "Saturday": 5}
     operationalHours = [9, 10, 11, 12, 1, 2, 3, 4, 5, 6]
-    financialDays = operationalDays.keys()
+    financialDays = sorted(operationalDays.keys())
     print(financialDays)
     if operationalDays.splice(6):
         print(range(operationalHours[0,10]))
