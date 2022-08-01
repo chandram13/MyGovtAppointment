@@ -28,7 +28,7 @@ def united_States_Postal_Service(self, fname, lname, email, operationalDays, ope
     for h in operationalHours:
         print(h)
     if operationalDays.splice(4):
-        print(range(operationalHours[0, 4]))
+        print(range(operationalHours[0, 8]))
 
 
 def localLibrary(fname, lname, email, operationalDays, operationalHours):
@@ -43,26 +43,72 @@ def localLibrary(fname, lname, email, operationalDays, operationalHours):
 
     services = ["Loan a Book", "Loan a Movie", "Access a Computer", "Print", "Study"]
 
+    operationalDays = {"Monday": 0, "Tuesday": 1, "Wednesday": 2, "Thursday": 3, "Friday": 4, "Saturday": 5}
+    operationalHours = [10, 11, 12, 1, 2, 3, 4, 5, 6, 7]
+    libDays = operationalDays.keys()
+    print(libDays)
+    for h in operationalHours:
+        print(h)
+    if operationalDays.splice(5):
+        print(range(operationalHours[0,9]))
 
 def foodDistribution(operationalDays, operationalHours):
     services = ["Donate unexpired goods", "Receive unexpired goods", "Volunteer"]
     operationalDays = {"Monday": 0, "Tuesday": 1, "Wednesday": 2, "Thursday": 3, "Friday": 4, "Saturday": 5,
                        "Sunday": 6}
     operationalHours = [9, 10, 11, 12, 1, 2, 3, 4, 5, 6, 7]
+    fooDays = operationalDays.keys()
+    print(fooDays)
+    for h in operationalHours:
+        print(h)
+    if operationalDays.splice(7):
+        print(range(operationalHours[0,10]))
 
 
 def clothesDrive(operationalDays, operationalHours):
     services = ["Donate new or used clothing", "Receive clothing", "Volunteer"]
-
+    operationalDays = {"Monday": 0, "Tuesday": 1, "Wednesday": 2, "Thursday": 3, "Friday": 4, "Saturday": 5, "Sunday": 6}
+    operationalHours = [9, 10, 11, 12, 1, 2, 3, 4, 5, 6, 7]
+    clothesDays = operationalDays.keys()
+    print(clothesDays)
+    for h in operationalHours:
+        print(h)
+    if operationalDays.splice(7):
+        print(range(operationalHours[0,10]))
 
 def hospitals(fname, lname, operationalDays, operationalHours):
     fname = ""
     hfName = re.string("[a-Z]{0,15}$/", fname)
+    print(hfName)
     lname = ""
+    hlName = re.string("[a-Z]{0,15}$/", lname)
+    print(hlName)
 
+    services = ["Childcare", "Nursing", "Surgery", "Pharmacy", "Cancer treatment", "Rehabilitation"]
+    operationalDays = {"Monday": 0, "Tuesday": 1, "Wednesday": 2, "Thursday": 3, "Friday": 4, "Saturday": 5, "Sunday": 6}
+    operationalHours1 = [12, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+    operationalHours2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 
-    services = ["Childcare", "Nursing","Surgery","Pharmacy","Cancer treatment","Rehabilitation"]
-
+    hospitalDays = operationalDays.keys()
+    print(hospitalDays)
+    if operationalDays.splice(7):
+        print(range(operationalHours1[0,11]))
+        print(range(operationalHours2[0,11]))
 
 def financialInstitutions(fname, lname, operationalDays, operationalHours):
-    services = ["Borrow money","Deposit money","Withdraw weapon","Setup checking account","Setup savings account"]
+    fname = ""
+    ffiName = re.string("[a-Z]{0,15}$/", fname)
+    print(ffiName)
+    lname = ""
+    lfiName = re.string("[a-Z]{0,15}$/", lname)
+    print(lfiName)
+
+    services = ["Borrow money", "Deposit money", "Withdraw weapon", "Setup checking account", "Setup savings account"]
+    operationalDays = {"Monday": 0, "Tuesday": 1, "Wednesday": 2, "Thursday": 3, "Friday": 4, "Saturday": 5}
+    operationalHours = [9, 10, 11, 12, 1, 2, 3, 4, 5, 6]
+    financialDays = operationalDays.keys()
+    print(financialDays)
+    if operationalDays.splice(6):
+        print(range(operationalHours[0,10]))
+
+
