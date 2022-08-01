@@ -23,7 +23,7 @@ def united_States_Postal_Service(self, fname, lname, email, operationalDays, ope
 
     operationalDays = {"Monday": 0, "Tuesday": 1, "Wednesday": 2, "Thursday": 3, "Friday": 3, "Saturday": 4}
     operationalHours = [9, 10, 11, 12, 1, 2, 3, 4, 5]
-    daysKeys = sorted(d.keys())
+    daysKeys = sorted(operationalDays.keys())
     print(daysKeys)
     for h in operationalHours:
         print(h)
